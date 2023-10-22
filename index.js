@@ -24,7 +24,7 @@ function share()
     let newname=document.getElementById("entername").value;
     let sha=document.getElementById("lin");
     sha.style.display="block";
-    sha.value=`http://192.168.1.4:3000/index.html?name=${newname}`;
+    sha.value=`https://deviladk.github.io/diwali/?name=${newname}`;
 }
 
 
