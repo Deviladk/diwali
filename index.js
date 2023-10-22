@@ -1,9 +1,4 @@
 
-// function nam(){
-//     let con=document.getElementById("rewrite");
-//     let cha=document.getElementById("change").value;
-//     con.innerHTML=cha;
-// }
 preload();
 function preload(){
     let newname=window.location.search;
@@ -24,3 +19,20 @@ function pre(){
     oldname1.innerHTML=newname;
 }
 
+function share()
+{
+    let newname=document.getElementById("entername").value;
+    let sha=document.getElementById("lin");
+    sha.style.display="block";
+    sha.value=`http://192.168.1.4:3000/index.html?name=${newname}`;
+}
+
+
+var x=0;
+function rot(y)
+{
+    x=x+y;
+    let ele=document.getElementById("rote");
+    ele.style.transform=`rotate(${x}deg)`;
+    ele.style.transition="all 5s ease-in-out";
+}
