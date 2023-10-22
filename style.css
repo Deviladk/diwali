@@ -79,6 +79,9 @@ video{
 button{
     cursor: pointer;
 }
+.sha{
+    margin-top: 20px;
+}
 
 
 .footer{
